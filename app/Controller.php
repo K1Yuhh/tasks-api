@@ -57,7 +57,6 @@ abstract class Controller
         $this->user_id = $data['id'];
 
         return !is_null($data);
-
     }
 
     protected function isValidID(): bool
