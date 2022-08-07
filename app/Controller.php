@@ -54,12 +54,10 @@ abstract class Controller
 
         $data = Response::jsonDecode($convertToPlainText, true);
 
-        if (is_null($data))
-            return false;
-
         $this->user_id = $data['id'];
 
-        return true;
+        return !is_null($data);
+
     }
 
     protected function isValidID(): bool
