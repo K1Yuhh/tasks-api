@@ -1,0 +1,26 @@
+#-------------------------
+# Composer
+#-------------------------
+/vendor
+composer.lock
+
+#-------------------------
+# Environment Files
+#-------------------------
+.env
+.env.backup
+
+#-------------------------
+# IDE Folders/Files
+#-------------------------
+.idea/
+.vscode/
+/node_modules
+.phpunit.result.cache
+npm-debug.log
+yarn-error.log
+
+#-------------------------
+# Add Files Below
+#-------------------------
+CONSIDER.md
