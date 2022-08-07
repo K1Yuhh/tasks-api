@@ -8,9 +8,10 @@ class View
     {
         Response::header("Content-Type: text/html; charset=UTF-8");
 
-        $file = __DIR__ ."/../Views/$view.php";
+        $file = "../Views/$view.php";
 
-        if (!file_exists($file)) return 'File does not exist';
+        if (!file_exists($file))
+            return "'$file' does not exist";
 
         ob_start();
         require_once $file;

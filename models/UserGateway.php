@@ -8,8 +8,6 @@ use PDO;
 
 class UserGateway extends Database
 {
-    private PDO $con;
-
     public function __construct()
     {
         parent::__construct();

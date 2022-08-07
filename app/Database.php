@@ -6,9 +6,10 @@ namespace K1\App;
 
 use PDO;
 
-class Database
+abstract class Database
 {
-    private ?PDO $con = null;
+    protected ?PDO $con = null;
+
     private string $host;
     private string $name;
     private string $user;
